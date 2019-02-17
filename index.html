@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/embed.behance.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
   
@@ -261,54 +262,12 @@
             In browser you will see buttons when hover on cards
         </h3>
         <div class="media-container-row pt-5 ">
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper ">
-                    <div class="card-img">
-                        <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center"><a href="https://google.com" class="btn btn-primary display-4">Learn More</a></div>
-                        <img src="assets/images/background1.jpg" alt="Mobirise">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-5">
-                            Project Title</h4>
-                        <p class="mbr-text mbr-fonts-style align-left display-7">
-                            Mobirise is an easy website builder - just drop site elements to your page, add content and style it to look</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center"><a href="https://google.com" class="btn btn-primary display-4">Learn More</a></div>
-                        <img src="assets/images/background2.jpg" alt="Mobirise">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-5">
-                            Project title 2</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                           All sites you make with Mobirise are mobile-friendly. You don't have to create a special mobile version</p>
-                    </div>
-                </div>
-            </div>
+            
+            <!-- THE BEHANCE PORTFOLIO WILL BE PRINTED IN HERE -->
+            <div class="behance-container">
 
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center"><a href="https://google.com" class="btn btn-primary display-4">Learn More</a></div>
-                        <img src="assets/images/background3.jpg" alt="Mobirise">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-5">
-                            Project title 3</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            Mobirise offers many site blocks in several themes, and though these blocks are pre-made, they are flexible.
-                        </p>
-                    </div>
-                </div>
+                <div class="eb-pagination-button btn btn-primary"><span>Load More</span> <span class="icon-loading"></span> </div>
             </div>
-
             
         </div>
     </div>
@@ -404,8 +363,26 @@
   <script src="assets/parallax/jarallax.min.js"></script>
   <script src="assets/smoothscroll/smooth-scroll.js"></script>
   <script src="assets/theme/js/script.js"></script>
+  <script src="assets/theme/js/embed.behance.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
   
+  <script>
+
+    $(document).ready(function(){
+
+         $('.behance-container').embedBehance({
+
+             // behance API Key
+            apiKey: 'bJFzpSHTLVxHz9FwhOpDwOjl5JPuGcTj',
+
+            // Behance Username
+            userName: 'gbob8010',infiniteScrolling: false,
+
+        });
+
+    });
+
+</script>
   
 </body>
 </html>
