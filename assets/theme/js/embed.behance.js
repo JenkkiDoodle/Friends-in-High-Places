@@ -27,10 +27,11 @@ $.fn.embedBehance = function( options ) {
 		publishedDate: true,
 		projectUrl: true,
 		fields: true,
-		apiKey: '',
+		apiKey: 'bJFzpSHTLVxHz9FwhOpDwOjl5JPuGcTj',
 		itemsPerPage: '6',
-		userName: '',
+		userName: 'gbob801089fa',
 		infiniteScrolling: false,
+		showButton:'false',
 		imageCaption: false,
 		ownerLink: false,
 		description: false,
@@ -1103,9 +1104,9 @@ $.fn.embedBehance = function( options ) {
 			}
 
 			// if there are other results to load I build the pagination button (if the infiniteScrolling is set to FALSE)
-			if(action == 'show' && settings.infiniteScrolling == false) {
+			if(action == 'show' && settings.infiniteScrolling == false && settings.showButton == true) {
 
-				$(behanceContainer).append('<div class="eb-pagination-button btn btn-primary"><span>Load More</span> <span class="icon-loading"></span> </div>');
+				$(behanceContainer).append('<div class="eb-pagination-button btn-primary"><span>Load More</span> <span class="icon-loading"></span> </div>');
 
 			} else if (action == 'remove') {
 

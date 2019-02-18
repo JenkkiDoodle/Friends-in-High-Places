@@ -56,10 +56,12 @@
 
 .eb-pagination-button, .eb-container aside .wrap-project-url a{
 	font-weight: 400;
-	border-radius: 30px;
+	border-radius: 100px;
 	cursor: pointer;
 	display: block;
 	transition: opacity 0.3s;
+	word-wrap: normal;
+	text-align: center;
 }
 
 .eb-pagination-button span{
@@ -68,7 +70,7 @@
 }
 
 .eb-pagination-button span svg{
-	width: 1.6em;
+	/* width: 1.6em; */
 }
 
 .eb-loadingicon{
